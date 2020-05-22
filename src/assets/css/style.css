@@ -98,7 +98,7 @@ p {
 .social-media {
     margin: .5rem .5rem 0 .5rem;
     width: 2rem;
-    transition: transform .25s ease-in-out;
+    transition: transform .2s ease-in-out;
 }
 
 .social-media:focus, .social-media:hover {
@@ -108,6 +108,13 @@ p {
 /* -------------------------------------------------
     Identifier styles
    ------------------------------------------------- */
+
+#about {
+    background-image: url('/src/assets/img/bg-about.jpg');
+    background-position: center;
+    border-top: .05rem solid var(--accent-color-6);
+    height: 60vh;
+}
 
 #home div:first-child {
     background-image: url('/src/assets/img/bg-home.jpg');
@@ -153,11 +160,6 @@ p {
 
 
 /* ====================================================================================================================================================================== */
-
-#about {
-    background-color: thistle;
-    height: 60vh;
-}
 
 #booking {
     background-color: yellowgreen;
