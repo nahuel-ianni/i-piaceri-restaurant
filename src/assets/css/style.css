@@ -22,7 +22,7 @@
     Element styles
    ------------------------------------------------- */
 
-   body, html {
+body, html {
     background-color: var(--accent-color-1);
     color: var(--high-contrast-color);
     font-family: 'Montserrat', sans-serif;
@@ -31,6 +31,16 @@
     margin: 0;
     scroll-behavior: smooth;
     word-spacing: .075rem;
+}
+
+footer {
+    bottom: var(--space-unit);
+    position: fixed;
+    right: var(--space-unit);
+    
+    /* right: 0; */
+    /* padding-right: var(--space-unit); */
+    background-color: var(--accent-color-2);
 }
 
 h1 {
@@ -59,7 +69,7 @@ p {
 
 .centered {
     align-items: center;
-    /* flex-direction: column; */
+    flex-direction: column;
     justify-content: center;
 }
 
@@ -83,6 +93,16 @@ p {
 
 .font-l {
     font-size: x-large;
+}
+
+.social-media {
+    margin: .5rem .5rem 0 .5rem;
+    width: 2rem;
+    transition: transform .25s ease-in-out;
+}
+
+.social-media:focus, .social-media:hover {
+    transform: scale(1.15);
 }
 
 /* -------------------------------------------------
