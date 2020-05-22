@@ -157,8 +157,14 @@ p {
 
 #about {
     background-image: url('/src/assets/img/bg-about.jpg');
-    background-position: center;
+    background-position: bottom;
     border-top: .05rem solid var(--accent-color-6);
+    height: 60vh;
+}
+
+#booking {
+    background-image: url('/src/assets/img/bg-booking.jpg');
+    background-position: center;
     height: 60vh;
 }
 
