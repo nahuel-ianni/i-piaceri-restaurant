@@ -1,0 +1,138 @@
+/* -------------------------------------------------
+    Variables
+   ------------------------------------------------- */
+
+   :root {
+    --accent-color-1: #320b00;
+    --accent-color-2: #2e0000bd;
+    --accent-color-3: #460808;
+    --accent-color-4: #ce8016;
+    --accent-color-5: #ba7035;
+    --accent-color-6: #794500;
+    --accent-color-7: #4b3e38;
+    --accent-color-8: #2e000005;
+
+    --high-contrast-color: #fff;
+    --low-contrast-color: black;
+
+    --space-unit: 1.5rem;
+}
+
+/* -------------------------------------------------
+    Element styles
+   ------------------------------------------------- */
+
+   body, html {
+    background-color: var(--accent-color-1);
+    color: var(--high-contrast-color);
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: .2rem;
+    line-height: 1.5;
+    margin: 0;
+    scroll-behavior: smooth;
+    word-spacing: .075rem;
+}
+
+h1 {
+    color: var(--high-contrast-color);
+    background: linear-gradient(
+        90deg,
+        var(--accent-color-8),
+        var(--accent-color-2),
+        var(--accent-color-8));
+    font: 7.5rem 'Arizonia', 'Montserrat', sans-serif;
+    margin: 0 0 1rem 0;
+    padding: 0 15rem;
+}
+
+img {
+    object-fit: cover;
+}
+
+/* -------------------------------------------------
+    Class styles
+   ------------------------------------------------- */
+
+.centered {
+    align-items: center;
+    /* flex-direction: column; */
+    justify-content: center;
+}
+
+.chevron {
+    background-color: var(--accent-color-1);
+    border: .05rem solid var(--accent-color-6);
+    border-radius: 50%;
+    bottom: -1.25rem;
+    padding: .6rem .6rem .1rem .6rem;
+    position: absolute;
+    width: 2.5rem;
+}
+
+.flex {
+    display: flex;
+}
+
+/* -------------------------------------------------
+    Identifier styles
+   ------------------------------------------------- */
+
+#home div:first-child {
+    background-image: url('/src/assets/img/bg-home.jpg');
+    background-position: center;
+    height: 70vh;
+    position: relative;
+}
+
+#home div:first-child div {
+    background-color: var(--accent-color-2);
+    border-bottom: .05rem solid var(--accent-color-6);
+    border-top: .05rem solid var(--accent-color-6);
+    bottom: 0;
+    color: var(--accent-color-5);
+    padding: 1rem;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+}
+
+#home div:last-child img {
+    height: 30vh;
+    object-position: top;
+    width: 33.33%;
+}
+
+#home div:last-child img:nth-child(2) {
+    border-left: .05rem solid var(--accent-color-7);
+    border-right: .05rem solid var(--accent-color-7);
+}
+
+/* -------------------------------------------------
+    Shared styles
+   ------------------------------------------------- */
+
+* {
+    box-sizing: border-box;
+}
+
+
+
+
+
+
+/* ====================================================================================================================================================================== */
+
+#about {
+    background-color: thistle;
+    height: 60vh;
+}
+
+#booking {
+    background-color: yellowgreen;
+    height: 60vh;
+}
+
+#contact {
+    background-color: violet;
+    height: 60vh;
+}
