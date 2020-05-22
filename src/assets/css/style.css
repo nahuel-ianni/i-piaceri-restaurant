@@ -34,13 +34,21 @@ body, html {
 }
 
 footer {
+    background-color: var(--accent-color-2);
     bottom: var(--space-unit);
     position: fixed;
     right: var(--space-unit);
-    
-    /* right: 0; */
-    /* padding-right: var(--space-unit); */
-    background-color: var(--accent-color-2);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin: var(--space-unit);
+    width: 100%;
+}
+
+form div {
+    margin-bottom: 1rem;
 }
 
 h1 {
@@ -59,6 +67,24 @@ img {
     object-fit: cover;
 }
 
+input[type="email"], input[type="text"], textarea {
+    background-color: var(--accent-color-3);
+    border: none;
+    color: var(--high-contrast-color);
+    font-family: inherit;
+    margin-bottom: 1rem;
+    padding: 1rem;
+}
+
+input[type="submit"] {
+    background-color: transparent;
+    margin-left: auto;
+}
+
+label {
+    margin-right: var(--space-unit);
+}
+
 p {
     margin: 1rem;
 }
@@ -66,6 +92,21 @@ p {
 /* -------------------------------------------------
     Class styles
    ------------------------------------------------- */
+
+.button {
+    border: .05rem solid var(--high-contrast-color);
+    border-radius: 0;
+    color: var(--high-contrast-color);
+    cursor: pointer;
+    padding: .75rem;
+    text-decoration: none;
+    transition: all .3s ease-in-out;
+}
+
+.button:focus, .button:hover {
+    background-color: var(--high-contrast-color);
+    color: var(--low-contrast-color);
+}
 
 .centered {
     align-items: center;
@@ -95,6 +136,11 @@ p {
     font-size: x-large;
 }
 
+.hidden {
+    height: 0;
+    overflow: hidden;
+}
+
 .social-media {
     margin: .5rem .5rem 0 .5rem;
     width: 2rem;
@@ -114,6 +160,15 @@ p {
     background-position: center;
     border-top: .05rem solid var(--accent-color-6);
     height: 60vh;
+}
+
+#contact {
+    height: 60vh;
+}
+
+#contact img {
+    object-position: top;
+    width: 33.33%;
 }
 
 #home div:first-child {
@@ -152,21 +207,4 @@ p {
 
 * {
     box-sizing: border-box;
-}
-
-
-
-
-
-
-/* ====================================================================================================================================================================== */
-
-#booking {
-    background-color: yellowgreen;
-    height: 60vh;
-}
-
-#contact {
-    background-color: violet;
-    height: 60vh;
 }
