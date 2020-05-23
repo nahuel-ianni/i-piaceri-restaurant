@@ -59,7 +59,7 @@ h1 {
         var(--accent-color-2),
         var(--accent-color-8));
     font: 7.5rem 'Arizonia', 'Montserrat', sans-serif;
-    margin: 0 0 1rem 0;
+    margin: 0 0 2rem 0;
     padding: 0 15rem;
 }
 
@@ -151,6 +151,17 @@ p {
     transform: scale(1.15);
 }
 
+.transition {
+    background: linear-gradient(
+        #00000000,
+        #000000,
+        #00000000);
+    bottom: -5rem;
+    height: 10rem;
+    position: absolute;
+    width: 100%;
+}
+
 /* -------------------------------------------------
     Identifier styles
    ------------------------------------------------- */
@@ -160,6 +171,7 @@ p {
     background-position: bottom;
     border-top: .05rem solid var(--accent-color-6);
     height: 60vh;
+    position: relative;
 }
 
 #booking {
@@ -169,6 +181,7 @@ p {
 }
 
 #contact {
+    border-top: .05rem solid var(--accent-color-6);
     height: 60vh;
 }
 
