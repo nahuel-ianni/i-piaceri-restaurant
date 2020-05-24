@@ -6,11 +6,10 @@
     --accent-color-1: #320b00;
     --accent-color-2: #2e0000bd;
     --accent-color-3: #460808;
-    --accent-color-4: #ce8016;
+    --accent-color-4: #00000003;
     --accent-color-5: #ba7035;
     --accent-color-6: #794500;
     --accent-color-7: #4b3e38;
-    --accent-color-8: #2e000005;
 
     --high-contrast-color: #fff;
     --low-contrast-color: black;
@@ -53,14 +52,8 @@ form div {
 
 h1 {
     color: var(--high-contrast-color);
-    background: linear-gradient(
-        90deg,
-        var(--accent-color-8),
-        var(--accent-color-2),
-        var(--accent-color-8));
     font: 7.5rem 'Arizonia', 'Montserrat', sans-serif;
     margin: 0 0 2rem 0;
-    padding: 0 15rem;
 }
 
 img {
@@ -92,6 +85,16 @@ p {
 /* -------------------------------------------------
     Class styles
    ------------------------------------------------- */
+
+.background {
+    background: linear-gradient(
+        90deg,
+        var(--accent-color-4),
+        var(--accent-color-2),
+        var(--accent-color-4)
+    );
+    padding: .75rem 2rem;
+}   
 
 .button {
     border: .05rem solid var(--high-contrast-color);
