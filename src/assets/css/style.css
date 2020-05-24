@@ -134,14 +134,17 @@ p {
     overflow: hidden;
 }
 
-.social-media {
-    margin: .5rem .5rem 0 .5rem;
-    width: 2rem;
+.scale-anim {
     transition: transform .2s ease-in-out;
 }
 
-.social-media:focus, .social-media:hover {
+.scale-anim:focus, .scale-anim:hover {
     transform: scale(1.15);
+}
+
+.social-media {
+    margin: .5rem .5rem 0 .5rem;
+    width: 2rem;
 }
 
 .text-background {
