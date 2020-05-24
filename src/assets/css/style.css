@@ -2,7 +2,7 @@
     Variables
    ------------------------------------------------- */
 
-   :root {
+:root {
     --accent-color-1: #320b00;
     --accent-color-2: #2e0000bd;
     --accent-color-3: #460808;
@@ -12,7 +12,7 @@
     --accent-color-7: #4b3e38;
 
     --high-contrast-color: #fff;
-    --low-contrast-color: black;
+    --low-contrast-color: #000;
 
     --space-unit: 1.5rem;
 }
