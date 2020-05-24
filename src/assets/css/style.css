@@ -172,6 +172,7 @@ p {
     border-top: .05rem solid var(--accent-color-6);
     height: 60vh;
     position: relative;
+    text-align: center;
 }
 
 #booking {
