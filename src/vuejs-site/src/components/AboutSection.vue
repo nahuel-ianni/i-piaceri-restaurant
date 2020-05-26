@@ -2,7 +2,7 @@
   <section class="align-center">
     <p class="text-background">
       Located in the heart of the most emblematic area of Buenos Aires, Argentina,
-      <em>I Piaceri</em> has been serving authentic Italian cuisine since 1895.
+      <b>I Piaceri</b> has been serving authentic Italian cuisine since 1895.
       <br />Its mix of traditional dishes with the latest Italian gastronomical tendencies, has made it a perfect place to experience a country's culinary evolution.
       <br />
       <br />Its signature Masonry oven-made pizza, complimented with Chianti wine and Caprese salad, has rewarded the restaurant with
