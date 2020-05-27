@@ -4,22 +4,46 @@
       <h1 class="text-background">I Piaceri</h1>
 
       <div>
-        <p class="font-s">BAR RESTAURANT</p>
-        <p class="font-l">AUTHENTIC ITALIAN CUISINE</p>
+        <p class="small">{{ text.subheader[language] }}</p>
+        <p class="large">{{ text.header[language] }}</p>
       </div>
 
       <a class="chevron scale-anim" href="#booking">
-        <img src="@/assets/img/icon-down.svg" alt="Find out more about us" />
+        <img src="../assets/img/icon-down.svg" :alt="text.booking_alt[language]" />
       </a>
     </div>
 
     <div class="bottom">
-      <img src="@/assets/img/img-home-1.jpg" alt="Home made pizza" />
-      <img src="@/assets/img/img-home-2.jpg" alt="Chef preparing pasta" />
-      <img src="@/assets/img/img-home-3.jpg" alt="Salad ingredients" />
+      <img src="../assets/img/img-home-1.jpg" alt="Home made pizza" />
+      <img src="../assets/img/img-home-2.jpg" alt="Chef preparing pasta" />
+      <img src="../assets/img/img-home-3.jpg" alt="Salad ingredients" />
     </div>
   </section>
 </template>
+
+<script>
+export default {
+  data: function() {
+    return {
+      text: {
+        header: {
+          "en-US": "AUTHENTIC ITALIAN CUISINE",
+          "es-ES": "AUTENTICA COCINA ITALIANA"
+        },
+        subheader: {
+          "en-US": "BAR RESTAURANT",
+          "es-ES": "BAR RESTAURANTE"
+        },
+        booking_alt: {
+          "en-US": "Book a table with us",
+          "es-ES": "Reserva una mesa con nosotros"
+        }
+      }
+    };
+  },
+  props: ['language'],
+};
+</script>
 
 <style scoped>
 h1 {
@@ -53,12 +77,12 @@ h1 {
   width: 2.5rem;
 }
 
-.font-s {
-  font-size: small;
+.large {
+  font-size: x-large;
 }
 
-.font-l {
-  font-size: x-large;
+.small {
+  font-size: small;
 }
 
 .top {

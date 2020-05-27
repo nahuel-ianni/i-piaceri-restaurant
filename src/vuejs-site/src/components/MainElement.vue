@@ -1,6 +1,6 @@
 <template>
   <main>
-    <HomeSection id="home"/>
+    <HomeSection id="home" language="es-ES"/>
     <AboutSection id="about" />
     <BookingSection id="booking"/>
     <ContactSection id="contact" />
