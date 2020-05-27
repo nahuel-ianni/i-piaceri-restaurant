@@ -9,7 +9,7 @@ import LanguageBar from "./LanguageBar.vue";
 
 export default {
   components: {
-    LanguageBar,
+    LanguageBar
   }
 };
 </script>
