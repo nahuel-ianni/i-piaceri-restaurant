@@ -22,12 +22,12 @@
 </template>
 
 <script>
-import { eventBus } from "../main";
+import { languageMixin } from "../mixins/languageMixin.js";
 
 export default {
+  mixins: [languageMixin],
   data: function() {
     return {
-      language: "en-US",
       text: {
         header: {
           "en-US": "AUTHENTIC ITALIAN CUISINE",
@@ -56,11 +56,6 @@ export default {
       }
     };
   },
-  created() {
-    eventBus.$on("languageChanged", newLanguage => {
-      this.language = newLanguage;
-    });
-  }
 };
 </script>
 
