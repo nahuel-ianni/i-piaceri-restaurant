@@ -9,14 +9,14 @@
       </div>
 
       <a class="chevron scale-anim" href="#booking">
-        <img src="../assets/img/icon-down.svg" :alt="text.booking_alt[language]" />
+        <img src="../assets/img/icon-down.svg" :alt="text.action_alt[language]" />
       </a>
     </div>
 
     <div class="bottom">
-      <img src="../assets/img/img-home-1.jpg" alt="Home made pizza" />
-      <img src="../assets/img/img-home-2.jpg" alt="Chef preparing pasta" />
-      <img src="../assets/img/img-home-3.jpg" alt="Salad ingredients" />
+      <img src="../assets/img/img-home-1.jpg" :alt="text.img1_alt[language]" />
+      <img src="../assets/img/img-home-2.jpg" :alt="text.img2_alt[language]" />
+      <img src="../assets/img/img-home-3.jpg" :alt="text.img3_alt[language]" />
     </div>
   </section>
 </template>
@@ -37,9 +37,21 @@ export default {
           "en-US": "BAR RESTAURANT",
           "es-ES": "BAR RESTAURANTE"
         },
-        booking_alt: {
+        action_alt: {
           "en-US": "Book a table with us",
           "es-ES": "Reserva una mesa con nosotros"
+        },
+        img1_alt: {
+          "en-US": "Home made pizza",
+          "es-ES": "Pizza casera"
+        },
+        img2_alt: {
+          "en-US": "Chef preparing pasta",
+          "es-ES": "Chef preparando pasta"
+        },
+        img3_alt: {
+          "en-US": "Salad ingredients",
+          "es-ES": "Ingredientes de una ensalada"
         }
       }
     };
