@@ -22,9 +22,12 @@
 </template>
 
 <script>
+import { eventBus } from "../main";
+
 export default {
   data: function() {
     return {
+      language: "en-US",
       text: {
         header: {
           "en-US": "AUTHENTIC ITALIAN CUISINE",
@@ -41,7 +44,11 @@ export default {
       }
     };
   },
-  props: ['language'],
+  created() {
+    eventBus.$on("languageChanged", newLanguage => {
+      this.language = newLanguage;
+    });
+  }
 };
 </script>
 

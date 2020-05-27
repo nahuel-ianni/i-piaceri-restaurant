@@ -1,22 +1,29 @@
 <template>
   <ul>
     <li>
-      <input type="radio" id="en-US" value="en-US" v-model="language" />
-      <label v-bind:class="{'active':language == 'en-US'}" for="en-US">ENG</label>
+      <input type="radio" id="en-US" value="en-US" v-model="language" @change="languageSelected" />
+      <label for="en-US" v-bind:class="{'active':language == 'en-US'}">ENG</label>
     </li>
     <li>
-      <input type="radio" id="es-ES" value="es-ES" v-model="language" />
-      <label v-bind:class="{'active':language == 'es-ES'}" for="es-ES">ESP</label>
+      <input type="radio" id="es-ES" value="es-ES" v-model="language" @change="languageSelected" />
+      <label for="es-ES" v-bind:class="{'active':language == 'es-ES'}">ESP</label>
     </li>
   </ul>
 </template>
 
 <script>
+import { eventBus } from "../main";
+
 export default {
   data: function() {
     return {
       language: "en-US"
     };
+  },
+  methods: {
+    languageSelected() {
+      eventBus.$emit("languageChanged", this.language);
+    }
   }
 };
 </script>
