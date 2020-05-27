@@ -1,14 +1,24 @@
 <template>
   <header>
-    <!-- <a href="#home">Home</a>
-    <a href="#about">About</a> -->
+    <LanguageBar />
   </header>
 </template>
 
-<style scoped>
+<script>
+import LanguageBar from "./LanguageBar.vue";
+
+export default {
+  components: {
+    LanguageBar,
+  }
+};
+</script>
+
+<style>
 header {
-  background-color: var(--accent-color-7);
-  display: flex;
-  justify-content: space-around;
+  margin: var(--space-unit);
+  position: fixed;
+  top: 0;
+  z-index: 100;
 }
 </style>
