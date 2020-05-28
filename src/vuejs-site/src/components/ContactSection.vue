@@ -2,17 +2,35 @@
   <section class="flex">
     <img src="@/assets/img/img-contact.jpg" :alt="text.contact_alt[language]" />
 
-    <form>
+    <form @submit.prevent="onSubmit">
       <h2>{{ text.header[language] }}</h2>
 
       <label class="hidden" for="name">{{ text.label_name[language] }}</label>
-      <input id="name" type="text" :placeholder="text.placeholder_name[language]" required />
+      <input
+        id="name"
+        type="text"
+        v-model="name"
+        :placeholder="text.placeholder_name[language]"
+        required
+      />
 
       <label class="hidden" for="email">{{ text.label_email[language] }}</label>
-      <input id="email" type="email" :placeholder="text.placeholder_email[language]" required />
+      <input
+        id="email"
+        type="email"
+        v-model="email"
+        :placeholder="text.placeholder_email[language]"
+        required
+      />
 
       <label class="hidden" for="message">{{ text.label_message[language] }}</label>
-      <textarea id="message" :placeholder="text.placeholder_message[language]" required rows="5"></textarea>
+      <textarea
+        id="message"
+        v-model="message"
+        :placeholder="text.placeholder_message[language]"
+        required
+        rows="5"
+      ></textarea>
 
       <input class="button" type="submit" :value="text.send[language]" />
     </form>
@@ -23,9 +41,15 @@
 import { languageMixin } from "../mixins/languageMixin.js";
 
 export default {
+  created() {
+    this.clearInput();
+  },
   mixins: [languageMixin],
   data: function() {
     return {
+      email: String,
+      message: String,
+      name: String,
       text: {
         header: {
           "en-US": "CONTACT",
@@ -65,6 +89,16 @@ export default {
         }
       }
     };
+  },
+  methods: {
+    clearInput: function(){
+      this.email = "";
+      this.message = "";
+      this.name = "";
+    },
+    onSubmit: function() {
+      this.clearInput();
+    }
   }
 };
 </script>
