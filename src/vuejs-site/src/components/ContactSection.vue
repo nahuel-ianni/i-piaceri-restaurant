@@ -97,6 +97,7 @@ export default {
       this.name = "";
     },
     onSubmit: function() {
+      // If you are seeing this, the Azure Function being called on this method was completely removed from code to ensure client privacy.
       this.clearInput();
     }
   }
