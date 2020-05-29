@@ -1,5 +1,5 @@
 <template>
-  <header>
+  <header v-scroll="onScroll">
     <LanguageBar />
   </header>
 </template>
@@ -8,19 +8,27 @@
 import LanguageBar from "./LanguageBar.vue";
 
 export default {
-  created() {
-    this.window.onscroll = function() {
-      const header = this.document.querySelector("header");
-
-      header.style.backgroundColor =
-        this.document.body.scrollTop >= 300 ||
-        this.document.documentElement.scrollTop >= 300
-          ? "var(--accent-color-1)"
-          : "transparent";
-    };
-  },
   components: {
     LanguageBar
+  },
+  data: function() {
+    return {
+      header: undefined,
+      styleColor: String
+    };
+  },
+  methods: {
+    onScroll: function(evt) {
+      if (!this.header) this.header = evt.srcElement.querySelector("header");
+      this.styleColor =
+        evt.srcElement.body.scrollTop >= 300 ||
+        evt.srcElement.documentElement.scrollTop >= 300
+          ? "var(--accent-color-1)"
+          : "transparent";
+
+      if (this.header.style.backgroundColor != this.styleColor)
+        this.header.style.backgroundColor = this.styleColor;
+    }
   }
 };
 </script>
