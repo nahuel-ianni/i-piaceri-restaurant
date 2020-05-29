@@ -36,6 +36,7 @@ input {
 label {
   color: var(--accent-color-6);
   cursor: pointer;
+  font-size: .9rem;
   margin-right: calc(var(--space-unit) / 2);
 }
 

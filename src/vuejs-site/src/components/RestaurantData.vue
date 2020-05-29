@@ -53,6 +53,6 @@ input {
 p {
   color: var(--accent-color-9);
   font-weight: bold;
-  padding: 0 2rem;
+  padding: 0 3rem;
 }
 </style>

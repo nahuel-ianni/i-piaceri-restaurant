@@ -29,7 +29,7 @@ html {
     background-color: var(--accent-color-1);
     color: var(--high-contrast-color);
     font-family: 'Montserrat', sans-serif;
-    letter-spacing: .15rem;
+    letter-spacing: .05rem;
     line-height: 1.5;
     margin: 0;
     scroll-behavior: smooth;
