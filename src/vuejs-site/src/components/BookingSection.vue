@@ -23,8 +23,8 @@ export default {
     return {
       text: {
         header: {
-          "en-US": "BOOKING",
-          "es-ES": "RESERVAS"
+          "en-US": "RESTAURANTS",
+          "es-ES": "RESTAURANTES"
         }
       },
       restaurants: [
