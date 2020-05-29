@@ -32,6 +32,10 @@
         rows="5"
       ></textarea>
 
+      <div id="notification" class="confirmation">
+        {{ text.confirmation[language] }}
+      </div>
+
       <input class="button" type="submit" :value="text.send[language]" />
     </form>
   </section>
@@ -86,6 +90,10 @@ export default {
         send: {
           "en-US": "SEND MESSAGE",
           "es-ES": "ENVIAR"
+        },
+        confirmation: {
+          "en-US": "Thank you for your message.",
+          "es-ES": "Gracias por su mensaje."
         }
       }
     };
@@ -97,8 +105,14 @@ export default {
       this.name = "";
     },
     onSubmit: function() {
-      // If you are seeing this, the Azure Function being called on this method was completely removed from code to ensure client privacy.
+      // I'm amazed someone reached this point, looking for the form code.
+      // In production, this method is calling an Azure Function that stores the messages on a queue for later processing.
+      // The original code on this method was completely removed to ensure client privacy.
+
       this.clearInput();
+      let element = document.querySelector("#notification");
+      element.style.bottom = "12.5%";
+      setTimeout(() => { element.style.bottom = "-50%" }, 7500);
     }
   }
 };
@@ -136,5 +150,16 @@ input[type="submit"] {
 section {
   border-top: 0.05rem solid var(--accent-color-6);
   height: var(--default-height);
+}
+
+#notification {
+  background-color: var(--accent-color-3);
+  bottom: -50%;
+  color: var(--accent-color-8);
+  padding: 1rem;
+  position: fixed;
+  text-align: center;
+  transition: .25s ease-in-out;
+  width: 64.4%;
 }
 </style>
