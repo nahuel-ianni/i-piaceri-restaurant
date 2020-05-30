@@ -1,10 +1,14 @@
 <template>
   <section class="align-center">
     <h2>{{ text.header[language] }}</h2>
-    
+
     <ul>
       <li v-for="restaurant in restaurants" :key="restaurant.area">
-        <RestaurantData :area="restaurant.area" :phoneNumber="restaurant.phoneNumber" :address="restaurant.address"/>
+        <RestaurantData
+          :area="restaurant.area"
+          :phoneNumber="restaurant.phoneNumber"
+          :address="restaurant.address"
+        />
       </li>
     </ul>
   </section>
@@ -28,8 +32,16 @@ export default {
         }
       },
       restaurants: [
-        { area: "COSTANERA NORTE", phoneNumber: "TEL. (5411) 4433-0666", address: "Av. Rafael Obligado 1032" },
-        { area: "PUERTO MADERO", phoneNumber: "TEL. (5411) 4433-0667", address: "Av. Olga Cossettini 23" },
+        {
+          area: "COSTANERA NORTE",
+          phoneNumber: "TEL. (5411) 4433-0666",
+          address: "Av. Rafael Obligado 1032"
+        },
+        {
+          area: "PUERTO MADERO",
+          phoneNumber: "TEL. (5411) 4433-0667",
+          address: "Av. Olga Cossettini 23"
+        }
       ]
     };
   }
@@ -54,5 +66,15 @@ ul {
   grid-template-columns: repeat(2, 1fr);
   list-style: none;
   padding: 0;
+}
+
+@media (max-width: 670px), (max-height: 800px) {
+  h2 {
+    font-size: 2rem;
+  }
+
+  ul {
+    display: block;
+  }
 }
 </style>

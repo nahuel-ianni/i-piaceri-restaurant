@@ -114,3 +114,13 @@ p {
 * {
     box-sizing: border-box;
 }
+
+/* -------------------------------------------------
+    Media queries
+   ------------------------------------------------- */
+
+@media (max-width: 670px), (max-height: 800px) {
+    h1 {
+        font-size: 5rem!important;
+    }
+}
