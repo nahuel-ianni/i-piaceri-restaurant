@@ -1,6 +1,6 @@
 module.exports = {
     publicPath: process.env.NODE_ENV === 'production'
-        ? '/i-piaceri-restaurant/'
+        ? '/docs/i-piaceri-restaurant/'
         : '/',
     outputDir: "docs"
 };
