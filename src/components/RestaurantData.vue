@@ -48,6 +48,7 @@ article {
 input {
   margin-top: 2rem;
   background-color: black;
+  -webkit-appearance: none;
 }
 
 p {

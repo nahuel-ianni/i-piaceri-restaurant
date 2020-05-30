@@ -136,10 +136,12 @@ input[type="text"],
 textarea {
   background-color: var(--accent-color-3);
   border: none;
+  border-radius: 0px;
   color: var(--high-contrast-color);
   font-family: inherit;
   margin-bottom: 1rem;
   padding: 1rem;
+  -webkit-border-radius: 0px;
 }
 
 input[type="submit"] {
