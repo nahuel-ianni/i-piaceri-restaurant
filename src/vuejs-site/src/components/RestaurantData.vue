@@ -55,4 +55,10 @@ p {
   font-weight: bold;
   padding: 0 3rem;
 }
+
+@media (max-width: 670px), (max-height: 800px) {
+  input {
+    margin: 1rem 0;
+  }
+}
 </style>
