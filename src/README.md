@@ -1,4 +1,4 @@
-# i-piaceri
+# I Piaceri - Authentic italian cuisine
 
 ## Project setup
 ```
