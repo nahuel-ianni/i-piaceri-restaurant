@@ -58,7 +58,7 @@ section {
   background-image: url("../assets/img/bg-booking.jpg");
   background-position: center;
   display: flex;
-  height: var(--default-height);
+  min-height: var(--default-height);
 }
 
 ul {

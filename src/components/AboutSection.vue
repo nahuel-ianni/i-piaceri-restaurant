@@ -29,7 +29,7 @@ section {
   background-position: bottom;
   border-top: 0.05rem solid var(--accent-color-6);
   display: flex;
-  height: var(--default-height);
+  min-height: var(--default-height);
   position: relative;
 }
 
