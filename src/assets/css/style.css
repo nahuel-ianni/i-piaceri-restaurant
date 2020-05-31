@@ -121,7 +121,7 @@ p {
 
 @media (max-width: 670px), (max-height: 800px) {
     :root {
-        --default-height: auto;
+        --default-height: 100vh;
     }
 
     h1 {
