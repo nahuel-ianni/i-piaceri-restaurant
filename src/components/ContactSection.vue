@@ -138,7 +138,7 @@ textarea {
   border: none;
   border-radius: 0px;
   color: var(--high-contrast-color);
-  font-family: inherit;
+  font: inherit;
   margin-bottom: 1rem;
   padding: 1rem;
   -webkit-border-radius: 0px;
