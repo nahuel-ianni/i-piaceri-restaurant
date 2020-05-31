@@ -53,6 +53,7 @@ h2 {
   color: var(--accent-color-9);
   font-size: 3rem;
 }
+
 section {
   background-image: url("../assets/img/bg-booking.jpg");
   background-position: center;
