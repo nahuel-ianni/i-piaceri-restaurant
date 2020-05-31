@@ -6,7 +6,7 @@
       <address>{{ instanceAddress }}</address>
     </article>
 
-    <input type="button" class="button" :value="text.button[language]" />
+    <a class="button" href="#contact">{{ text.button[language] }}</a>
   </div>
 </template>
 
@@ -43,12 +43,11 @@ article {
   background-image: url(../assets/img/bg_restaurant.png);
   background-position-y: 6px;
   background-repeat: no-repeat;
+  margin-bottom: 2rem;
 }
 
-input {
-  margin-top: 2rem;
+a {
   background-color: black;
-  -webkit-appearance: none;
 }
 
 p {
@@ -58,8 +57,8 @@ p {
 }
 
 @media (max-width: 670px), (max-height: 800px) {
-  input {
-    margin: 1rem 0;
+  article {
+    margin: 2rem 0;
   }
 }
 </style>
