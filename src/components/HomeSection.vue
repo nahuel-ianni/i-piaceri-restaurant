@@ -55,7 +55,7 @@ export default {
         }
       }
     };
-  },
+  }
 };
 </script>
 
@@ -117,5 +117,11 @@ h1 {
   position: absolute;
   text-align: center;
   width: 100%;
+}
+
+@media (max-height: 800px) {
+  .top {
+    height: 90vh;
+  }
 }
 </style>
