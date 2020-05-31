@@ -151,7 +151,7 @@ input[type="submit"] {
 
 section {
   border-top: 0.05rem solid var(--accent-color-6);
-  height: var(--default-height);
+  min-height: var(--default-height);
 }
 
 #notification {
@@ -168,10 +168,6 @@ section {
 @media (max-width: 670px), (max-height: 800px) {
   form {
     width: 55%;
-  }
-
-  section {
-    height: 75vh;
   }
 }
 </style>

@@ -121,7 +121,7 @@ h1 {
 
 @media (max-height: 400px) {
   .top {
-    height: 90vh;
+    height: 95vh;
   }
 }
 </style>
