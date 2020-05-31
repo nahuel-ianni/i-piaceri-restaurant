@@ -171,7 +171,7 @@ section {
   }
 
   section {
-    height: 70vh;
+    height: 75vh;
   }
 }
 </style>
