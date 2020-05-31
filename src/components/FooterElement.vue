@@ -33,7 +33,7 @@ export default {
 
 <style scoped>
 footer {
-  bottom: var(--space-unit);
+  bottom: calc(var(--space-unit) / 2.5);
   position: fixed;
   right: var(--space-unit);
 }
