@@ -120,6 +120,10 @@ p {
    ------------------------------------------------- */
 
 @media (max-width: 670px), (max-height: 800px) {
+    :root {
+        --default-height: 75vh;
+    }
+
     h1 {
         font-size: 5rem!important;
     }

@@ -51,11 +51,11 @@ img {
   width: 2rem;
 }
 
-@media (max-width: 670px), (max-height: 800px) {
+/* @media (max-width: 670px), (max-height: 800px) {
   footer {
     background-color: transparent;
     text-align: right;
     position: static;
   }
-}
+} */
 </style>
