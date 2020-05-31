@@ -151,7 +151,7 @@ input[type="submit"] {
 
 section {
   border-top: 0.05rem solid var(--accent-color-6);
-  height: var(--default-height);
+  height: calc(var(--default-height) + 2.5rem);
 }
 
 #notification {

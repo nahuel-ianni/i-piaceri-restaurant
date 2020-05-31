@@ -119,7 +119,7 @@ h1 {
   width: 100%;
 }
 
-@media (max-height: 800px) {
+@media (max-height: 400px) {
   .top {
     height: 90vh;
   }
