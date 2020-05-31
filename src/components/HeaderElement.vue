@@ -17,7 +17,7 @@ export default {
       header: undefined,
       name: undefined,
       styleColor: String,
-      nameVisibility: String
+      nameOpacity: String
     };
   },
   methods: {
@@ -31,14 +31,14 @@ export default {
           ? "var(--accent-color-1)"
           : "transparent";
 
-      this.nameVisibility =
-        this.styleColor == "var(--accent-color-1)" ? "inline" : "none";
+      this.nameOpacity =
+        this.styleColor == "var(--accent-color-1)" ? "1" : "0";
 
       if (this.header.style.backgroundColor != this.styleColor)
         this.header.style.backgroundColor = this.styleColor;
 
-      if (this.name.style.display != this.nameVisibility)
-        this.name.style.display = this.nameVisibility;
+      if (this.name.style.opacity != this.nameOpacity)
+        this.name.style.opacity = this.nameOpacity;
     }
   }
 };
@@ -57,8 +57,10 @@ header {
 }
 
 .name {
-  display: none;
+  /* display: none; */
   font: 1.5rem "Arizonia", "Montserrat", sans-serif;
   margin: 0;
+  opacity: 0;
+  transition: opacity .2s ease-in-out;
 }
 </style>
