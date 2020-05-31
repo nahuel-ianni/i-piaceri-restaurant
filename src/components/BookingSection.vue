@@ -34,13 +34,13 @@ export default {
       restaurants: [
         {
           area: "COSTANERA NORTE",
-          phoneNumber: "TEL. (5411) 4433-0666",
-          address: "Av. Rafael Obligado 1032"
+          phoneNumber: "TEL. (5411) 3344-4433",
+          address: "Av. Rafael Obligado 9032"
         },
         {
           area: "PUERTO MADERO",
-          phoneNumber: "TEL. (5411) 4433-0667",
-          address: "Av. Olga Cossettini 23"
+          phoneNumber: "TEL. (5411) 4433-3344",
+          address: "Av. Olga Cossettini 9023"
         }
       ]
     };
