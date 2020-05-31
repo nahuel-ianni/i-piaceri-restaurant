@@ -32,9 +32,7 @@
         rows="5"
       ></textarea>
 
-      <div id="notification" class="confirmation">
-        {{ text.confirmation[language] }}
-      </div>
+      <div id="notification" class="confirmation">{{ text.confirmation[language] }}</div>
 
       <input class="button" type="submit" :value="text.send[language]" />
     </form>
@@ -99,7 +97,7 @@ export default {
     };
   },
   methods: {
-    clearInput: function(){
+    clearInput: function() {
       this.email = "";
       this.message = "";
       this.name = "";
@@ -112,7 +110,9 @@ export default {
       this.clearInput();
       let element = document.querySelector("#notification");
       element.style.bottom = "12.5%";
-      setTimeout(() => { element.style.bottom = "-50%" }, 7500);
+      setTimeout(() => {
+        element.style.bottom = "-50%";
+      }, 7500);
     }
   }
 };
@@ -151,7 +151,7 @@ input[type="submit"] {
 
 section {
   border-top: 0.05rem solid var(--accent-color-6);
-  height: calc(var(--default-height) + 2.5rem);
+  height: var(--default-height);
 }
 
 #notification {
@@ -161,7 +161,17 @@ section {
   padding: 1rem;
   position: fixed;
   text-align: center;
-  transition: .25s ease-in-out;
+  transition: 0.25s ease-in-out;
   width: 64.4%;
+}
+
+@media (max-width: 670px), (max-height: 800px) {
+  form {
+    width: 55%;
+  }
+
+  section {
+    height: 70vh;
+  }
 }
 </style>
