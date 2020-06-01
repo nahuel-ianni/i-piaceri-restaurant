@@ -57,7 +57,6 @@ header {
 }
 
 .name {
-  /* display: none; */
   font: 1.5rem "Arizonia", "Montserrat", sans-serif;
   margin: 0;
   opacity: 0;
