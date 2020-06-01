@@ -15,7 +15,7 @@ export default {
       text: {
         about: {
           "en-US": "Located in the heart of the most emblematic areas of Buenos Aires, Argentina, <b>I Piaceri</b> has been serving authentic Italian cuisine since 1895.<br/>Its mix of traditional dishes with the latest Italian gastronomical tendencies, has made it a perfect place to experience a country's culinary evolution.<br/><br/>Its signature Masonry oven-made pizza, complimented with Chianti wine and Caprese salad, has rewarded the restaurant with <strong>3 Michelin stars</strong> for the past 15 years in a row.",
-          "es-ES": "Ubicada en las zonas más emblematicas de Buenos Aires, Argentina, <b>I Piaceri</b> ha sirvido auténtica comida Italiana desde 1985.<br/>Su mezcla de platos tradicionales con las últimas tendencias gastronómicas Italianas, lo han convertido en el sitio perfecto para experimentar la revolución culinaria del país.<br/><br/>Su exclusiva pizza cocinada en horno Masonry, complementada con vino Chianti y ensalada Caprese, le ha otorgado al restaurante <strong>3 estrellas Michelin</strong> 15 años seguidos."
+          "es-ES": "Ubicada en las zonas más emblematicas de Buenos Aires, Argentina, <b>I Piaceri</b> ha servido auténtica comida Italiana desde 1985.<br/>Su mezcla de platos tradicionales con las últimas tendencias gastronómicas Italianas, lo han convertido en el sitio perfecto para experimentar la revolución culinaria del país.<br/><br/>Su exclusiva pizza cocinada en horno Masonry, complementada con vino Chianti y ensalada Caprese, le ha otorgado al restaurante <strong>3 estrellas Michelin</strong> 15 años seguidos."
         }
       }
     };
