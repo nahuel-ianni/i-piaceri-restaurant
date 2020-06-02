@@ -1,7 +1,7 @@
 <template>
-  <header v-scroll="onScroll">
+  <header v-scroll="onScroll" :class="{ 'background': showFullHeader }">
     <LanguageBar />
-    <h2 class="name">I Piaceri</h2>
+    <h2 class="name" :class="{ 'display-name': showFullHeader }">I Piaceri</h2>
   </header>
 </template>
 
@@ -14,31 +14,19 @@ export default {
   },
   data: function() {
     return {
-      header: undefined,
-      name: undefined,
-      styleColor: String,
-      nameOpacity: String
+      scrolledPastTitle: false
     };
+  },
+  computed: {
+    showFullHeader() {
+      return this.scrolledPastTitle;
+    }
   },
   methods: {
     onScroll: function(evt) {
-      if (!this.header) this.header = evt.srcElement.querySelector("header");
-      if (!this.name) this.name = evt.srcElement.querySelector(".name");
-
-      this.styleColor =
+      this.scrolledPastTitle =
         evt.srcElement.body.scrollTop >= 300 ||
-        evt.srcElement.documentElement.scrollTop >= 300
-          ? "var(--accent-color-1)"
-          : "transparent";
-
-      this.nameOpacity =
-        this.styleColor == "var(--accent-color-1)" ? "1" : "0";
-
-      if (this.header.style.backgroundColor != this.styleColor)
-        this.header.style.backgroundColor = this.styleColor;
-
-      if (this.name.style.opacity != this.nameOpacity)
-        this.name.style.opacity = this.nameOpacity;
+        evt.srcElement.documentElement.scrollTop >= 300;
     }
   }
 };
@@ -56,10 +44,18 @@ header {
   z-index: 100;
 }
 
+.background {
+  background-color: var(--accent-color-1);
+}
+
+.display-name {
+  opacity: 1 !important;
+}
+
 .name {
   font: 1.5rem "Arizonia", "Montserrat", sans-serif;
   margin: 0;
   opacity: 0;
-  transition: opacity .2s ease-in-out;
+  transition: opacity 0.2s ease-in-out;
 }
 </style>
