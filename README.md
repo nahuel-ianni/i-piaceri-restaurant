@@ -1,6 +1,8 @@
 # I Piaceri - Authentic Italian cuisine
 Website created for an Italian restaurant operating in Buenos Aires, Argentina.
 
+You can see a live demo of the application [here](https://nahuel-ianni.github.io/i-piaceri-restaurant/).
+
 
 ## Table of contents
 * [Screenshots](#screenshots)
