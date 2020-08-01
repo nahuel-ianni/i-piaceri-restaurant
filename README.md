@@ -41,7 +41,7 @@ $ npm run serve
 
 This will allow you to navigate to the website, by default on http://localhost:3000
 
-More scripts, including deployment and test, can be found [here](./src/README.md).
+More scripts, including deployment and test, can be found [here](./src/src/README.md).
 
 
 ## Deployment
