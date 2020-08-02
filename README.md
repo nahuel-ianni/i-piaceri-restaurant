@@ -47,7 +47,7 @@ More scripts, including deployment and test, can be found [here](./src/src/READM
 
 
 ## Deployment
-A production version of the project can be created and deployed on the `build` folder, which bundles React in production mode and optimizes the build for the best performance.
+A production version of the project can be created and deployed on the `docs` folder, which bundles React in production mode and optimizes the build for the best performance.
 
 ```
 $ cd src
